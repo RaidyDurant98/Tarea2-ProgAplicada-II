@@ -16,6 +16,15 @@ namespace RegistroUsuario.UI.Registros
         {
 
         }
+        
+        private void Limpiar()
+        {
+            UsuarioIdTextBox.Text = " ";
+            NombresTextBox.Text = " ";
+            NombreUsuarioTextBox.Text = " ";
+            ClaveTextBox.Text = " ";
+            ConfirmarClaveTextBox.Text = " ";
+        }
 
         public Usuarios LlenarCampos()
         {
@@ -32,6 +41,11 @@ namespace RegistroUsuario.UI.Registros
             user = LlenarCampos();
             BLL.UsuariosBLL.Guardar(user);
             NombresTextBox.Focus();
+        }
+
+        protected void NuevoButton_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

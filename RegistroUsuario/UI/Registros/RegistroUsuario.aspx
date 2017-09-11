@@ -30,7 +30,7 @@
                 </div>
                 <div>
                     <asp:TextBox ID="UsuarioIdTextBox" runat="server" Width="228px" Height="30px"></asp:TextBox>
-                    <asp:Button ID="BuscarButton" runat="server" class="btn btn-success"  Text="Buscar" />
+                    <asp:Button ID="BuscarButton" runat="server" class="btn btn-success" Text="Buscar" />
                 </div>
                 <!--Nombres Usuario-->
                 <div>
@@ -63,7 +63,7 @@
                 <!--Botones Nuevo, Guardar, Eliminar-->
                 <div>
                     <br />
-                    <asp:Button ID="NuevoButton" runat="server" class="btn btn-success" Text="Nuevo" />
+                    <asp:Button ID="NuevoButton" runat="server" class="btn btn-success" Text="Nuevo" OnClick="NuevoButton_Click" />
                     <asp:Button ID="GuardarButton" runat="server" class="btn btn-success"  Text="Guardar" OnClick="GuardarButton_Click" />
                     <asp:Button ID="EliminarButton" runat="server" class="btn btn-success"  Text="Eliminar" />
                 </div>
